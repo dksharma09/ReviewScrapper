@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sample Table</title>
+</head>
+<body>
+
+<h1>Sample HTML Table</h1>
+
+<table border="1">
+  <tr>
+    <th>Product Name</th>
+    <th>Product Price</th>
+    <th>Product Highlights</th>
+    <th>Product Review</th>
+  </tr>
+  <tr>
+    {% for row in table_data %}
+    <td>{{ row.productName }}</td>
+    <td>{{ row.productPrice }}</td>
+    <td>{{row.productHighlightsList}}</td>
+    <td>{{row.productUserReviewList}}</td>
+    {% endfor %}
+  </tr>
+</table>
+
+</body>
+</html>

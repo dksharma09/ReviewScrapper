@@ -11,7 +11,7 @@ except Exception as e :
     logging.error(f'{str(time.strftime)} : Error occurred , str({e})')
  
 try :    
-    productName = "samsung"
+    productName = "samsunggalaxy"
     link = "https://www.flipkart.com/search?q=" + productName
     productData = requests.get(link).text
     
@@ -19,7 +19,7 @@ try :
 
     productDataClear = productDataClear.find_all('div', {'class' : "_13oc-S"})
     quantity = len(productDataClear)
-    # print(quantity)
+    print(quantity)
     
     for i in range(quantity) :
         getLink = productDataClear[i].div.div.a['href']
@@ -51,7 +51,7 @@ try :
         logging.info(f'{time.strftime} : Product Rating = {productRating}')
         
         findProductReview = particularProductData.find_all('div', {'class' : 'col _2wzgFH'})
-        print(len(findProductReview))
+        # print(len(findProductReview))
         for i in range(len(findProductReview)) :
             productUserRating = findProductReview[i].div.div.text
             logging.info(f'{time.strftime} : Product User Rating = {productUserRating}')

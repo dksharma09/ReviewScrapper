@@ -1,11 +1,70 @@
 [
     {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
         "label": "requests",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "requests",
         "description": "requests",
         "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
         "documentation": {}
     },
     {
@@ -32,6 +91,123 @@
         "importPath": "time",
         "description": "time",
         "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": "env.Scripts.bin.activate.Scripts.activate_this",
+        "description": "env.Scripts.bin.activate.Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir] + os.environ.get(\"PATH\", \"\").split(os.pathsep))\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)",
+        "detail": "env.Scripts.bin.activate.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": "env.Scripts.bin.activate.Scripts.activate_this",
+        "description": "env.Scripts.bin.activate.Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir] + os.environ.get(\"PATH\", \"\").split(os.pathsep))\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]",
+        "detail": "env.Scripts.bin.activate.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": "env.Scripts.bin.activate.Scripts.activate_this",
+        "description": "env.Scripts.bin.activate.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir] + os.environ.get(\"PATH\", \"\").split(os.pathsep))\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "env.Scripts.bin.activate.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": "env.Scripts.bin.activate.Scripts.activate_this",
+        "description": "env.Scripts.bin.activate.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "env.Scripts.bin.activate.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": "env.Scripts.bin.activate.Scripts.activate_this",
+        "description": "env.Scripts.bin.activate.Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "env.Scripts.bin.activate.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": "env.Scripts.bin.activate.Scripts.activate_this",
+        "description": "env.Scripts.bin.activate.Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "env.Scripts.bin.activate.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": "env.Scripts.bin.activate.Scripts.activate_this",
+        "description": "env.Scripts.bin.activate.Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "env.Scripts.bin.activate.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": "env.Scripts.bin.activate.Scripts.activate_this",
+        "description": "env.Scripts.bin.activate.Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": "env.Scripts.bin.activate.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "landingPage",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def landingPage() :\n    return render_template('index.html')\ntable_data = []\n@app.route(\"/result\", methods=['GET', 'POST'])\ndef resultPage():\n    if request.method != 'POST':\n        return render_template('output.html')\n    deviceName = request.form['query']\n    link = flipkart + deviceName\n    # print(link)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "resultPage",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def resultPage():\n    if request.method != 'POST':\n        return render_template('output.html')\n    deviceName = request.form['query']\n    link = flipkart + deviceName\n    # print(link)\n    productData = requests.get(link).text\n    productDataClear = bs(productData, \"html.parser\")\n    productDataClear = productDataClear.find_all('div', {'class' : \"_13oc-S\"})\n    quantity = len(productDataClear)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "flipkart",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "flipkart = 'https://www.flipkart.com/search?q='\napp = Flask(__name__)\n@app.route(\"/\")\ndef landingPage() :\n    return render_template('index.html')\ntable_data = []\n@app.route(\"/result\", methods=['GET', 'POST'])\ndef resultPage():\n    if request.method != 'POST':\n        return render_template('output.html')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\n@app.route(\"/\")\ndef landingPage() :\n    return render_template('index.html')\ntable_data = []\n@app.route(\"/result\", methods=['GET', 'POST'])\ndef resultPage():\n    if request.method != 'POST':\n        return render_template('output.html')\n    deviceName = request.form['query']",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "table_data",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "table_data = []\n@app.route(\"/result\", methods=['GET', 'POST'])\ndef resultPage():\n    if request.method != 'POST':\n        return render_template('output.html')\n    deviceName = request.form['query']\n    link = flipkart + deviceName\n    # print(link)\n    productData = requests.get(link).text\n    productDataClear = bs(productData, \"html.parser\")",
+        "detail": "app",
         "documentation": {}
     }
 ]

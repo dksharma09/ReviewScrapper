@@ -1,0 +1,18 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 636-379-779
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2023 16:43:42] "GET / HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.flipkart.com:443
+DEBUG:urllib3.connectionpool:https://www.flipkart.com:443 "GET /search?q=iphone11 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.flipkart.com:443
+DEBUG:urllib3.connectionpool:https://www.flipkart.com:443 "GET /apple-iphone-11-white-128-gb/p/itme32df47ea6742?pid=MOBFWQ6B7KKRXDDS&lid=LSTMOBFWQ6B7KKRXDDSULUZ0N&marketplace=FLIPKART&q=iphone11&store=tyy%2F4io&srno=s_1_1&otracker=search&fm=organic&iid=f64b24a3-1e60-44b3-8fbb-05efc6893c77.MOBFWQ6B7KKRXDDS.SEARCH&ppt=None&ppn=None&ssid=doehb7wvnk0000001690197228116&qH=d6db477051465f9a HTTP/1.1" 200 None
+INFO:root:<built-in function strftime> : Product Name = APPLE iPhone 11 (White, 128 GB)
+INFO:root:<built-in function strftime> : Product Price = ₹44,999
+INFO:root:<built-in function strftime> : 0. Product Highlights = 128 GB ROM
+INFO:root:<built-in function strftime> : 1. Product Highlights = 15.49 cm (6.1 inch) Liquid Retina HD Display
+INFO:root:<built-in function strftime> : 2. Product Highlights = 12MP + 12MP | 12MP Front Camera
+INFO:root:<built-in function strftime> : 3. Product Highlights = A13 Bionic Chip Processor
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2023 16:43:47] "[35m[1mPOST /result HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2023 16:43:48] "[36mGET /result?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2023 16:43:48] "[36mGET /result?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2023 16:43:48] "[36mGET /result?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\dushy\\VS Code\\Flipkart Review Scrapper\\app.py', reloading
